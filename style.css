@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bar_container {
+    background: #a6cf8b;
+    padding: 0 30px 0 30px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;    
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #b2732f;
+    font-size: 25px;
+}
