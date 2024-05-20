@@ -97,32 +97,30 @@
 .container-preguntas {
     width: 75%;
     margin: 50px auto;
+    padding-right: 3px;
+    padding-bottom: 6px;
     background-color: var(--color2);
+    border-radius: 6px;
 }
 
 .container-preguntas h2 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
-    font-size: 6em;
+    font-size: 5em;
     font-family: font2;
+    text-transform: uppercase;
 }
 
-.container-preguntas>p:first-of-type {
+.container-preguntas>p {
     width: 100%;
     line-height: 150%;
     padding-bottom: 5%;
     text-align: left;
     font-size: 1.2em;
+    margin: 0 auto;
 }
 
-.container-preguntas>p:last-of-type {
-    width: 100%;
-    line-height: 150%;
-    text-align: center;
-    padding: 5% 0%;
-    font-size: 1.5em;
-}
 
 .preguntas-frecuentes {
     box-shadow: 1px 1px 2px rgb(158, 156, 156);
@@ -137,6 +135,7 @@
 
 .simb-izq {
     font-size: 75px;
+    border: 5px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +145,7 @@
 .pregunta-frecuente p {
     padding-top: 30px;
     font-size: 1em;
-    width: 60%;
+    width: 80%;
 }
 
 .simb-der {
@@ -171,7 +170,7 @@
 
 .respuesta-frecuente {
     height: 0;
-    padding: 0 20px 4px 75px;
+    padding: -10px 20px 4px 75px;
     font-size: 1em;
     overflow: hidden;
     transition: 0.5s;
