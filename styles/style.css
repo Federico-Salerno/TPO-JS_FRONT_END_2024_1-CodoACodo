@@ -2,13 +2,14 @@
     font-family: font1;
     src: url(./font/Lucida\ Sans\ Demibold\ Roman.ttf);
 }
-@font-face{ 
+
+@font-face {
     font-family: font2;
     src: url(./font/MellonerRegular.ttf);
 }
 
 :root {
-    --color1: #B2732F;
+    --color1: #b2732f;
     --color2: #a6cf8b;
     --color3: #089344;
     --color4: #8ec048;
@@ -25,7 +26,7 @@
     height: 16.5vh;
     padding: 0 30px 0 30px;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     position: sticky;
     top: 0;
     width: 100%;
@@ -63,9 +64,9 @@
 }
 
 .quienesSomos-contenedor {
-min-height: 83.5vh;
-display: inline-flex;
-background: linear-gradient(to bottom,var(--color2),var(--color4));
+    min-height: 83.5vh;
+    display: inline-flex;
+    background: linear-gradient(to bottom, var(--color2), var(--color4));
 }
 
 .quienesSomos-parrafo {
@@ -91,3 +92,91 @@ background: linear-gradient(to bottom,var(--color2),var(--color4));
     text-align: center;
     line-height: 50px;
 }
+
+/* PREGUNTAS-FRECUENTES */
+.container-preguntas {
+    width: 75%;
+    margin: 50px auto;
+    background-color: var(--color2);
+}
+
+.container-preguntas h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 6em;
+    font-family: font2;
+}
+
+.container-preguntas>p:first-of-type {
+    width: 100%;
+    line-height: 150%;
+    padding-bottom: 5%;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.container-preguntas>p:last-of-type {
+    width: 100%;
+    line-height: 150%;
+    text-align: center;
+    padding: 5% 0%;
+    font-size: 1.5em;
+}
+
+.preguntas-frecuentes {
+    box-shadow: 1px 1px 2px rgb(158, 156, 156);
+}
+
+.pregunta-frecuente {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    font-family: font1;
+}
+
+.simb-izq {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.pregunta-frecuente p {
+    padding-top: 30px;
+    font-size: 1em;
+    width: 60%;
+}
+
+.simb-der {
+    width: 30px;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    transition: 0.5s;
+    box-shadow: 0 0 12px -1px var(--color-dark-green);
+    background-color: black;
+    color: white;
+}
+
+.simb-der:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--color-pale-green);
+}
+
+.respuesta-frecuente {
+    height: 0;
+    padding: 0 20px 4px 75px;
+    font-size: 1em;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    text-align: justify;
+}
+
+/* ------------------------------------------------------------------------- */
