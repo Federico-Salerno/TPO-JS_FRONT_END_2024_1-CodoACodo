@@ -12,6 +12,8 @@
     --color2: #a6cf8b;
     --color3: #089344;
     --color4: #8ec048;
+    --color5: #ffff;
+    --color-shadow: #0000004d;
 }
 
 * {
@@ -21,7 +23,7 @@
 }
 
 .bar_container {
-    background: var(--color2);
+    background: var(--color5);
     height: 16.5vh;
     padding: 0 30px 0 30px;
     display: flex;
@@ -29,6 +31,7 @@
     position: sticky;
     top: 0;
     width: 100%;
+    box-shadow: 0 2px 4px var(--color-shadow);
 }
 
 .logo img {
