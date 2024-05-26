@@ -10,7 +10,8 @@ for (let i = 0; i < botonDer.length; i = i + 1) {
 
     botonDer[i].addEventListener('click', () => {
         if ( conttador == 0 ) {
-            respuesta[i].style.height = `100px`;
+            respuesta[i].style.height = `120px  `;
+            respuesta[i].style.width = `85%`;
             pregunta[i].style.marginBottom = '30px';
             botonDer[i].innerHTML = '<i>-</i>';
             conttador = conttador + 1
