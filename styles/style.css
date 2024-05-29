@@ -209,16 +209,17 @@
 }
 
 form {
-    width: 110vw;
+    width: 100vw;
     max-width: 550px;
     /* border-radius: 8px; */
     margin: 0 auto;
     padding: 25px;
     box-shadow: 25px 30px 25px 10px rgb(65, 62, 62);
     border: 4px solid transparent;
+    transition: 0.6s;
 }
 
-form:hover{
+form:hover {
     transition: 0.6s;
     border: 4px solid white;
 }
@@ -244,7 +245,17 @@ textarea {
     margin-top: 8px;
     font-size: 0.7em;
     padding-left: 15px;
+    border: 2px solid black;
+    transition: 0.4s;
+}
 
+input:hover {
+    border: 1.7px solid transparent;
+    transition: 0.4s;
+}
+textarea:hover{
+    border: 1.7px solid transparent;
+    transition: 0.4s;
 }
 
 input[type="submit"] {
@@ -260,7 +271,7 @@ input[type="submit"] {
     font-size: 1.5em;
     background-color: black;
     /* border: 1px solid white; */
-
+    transition: 0.4s;
 }
 
 input[type="submit"]:hover {
@@ -272,4 +283,9 @@ input[type="submit"]:hover {
 .mensaje {
     height: 200px;
     resize: none;
+}
+
+#carouselExample{
+    width: 40vw;
+    height: 100vh;
 }
