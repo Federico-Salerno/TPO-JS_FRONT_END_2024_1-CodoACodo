@@ -4,6 +4,11 @@
 }
 @font-face{ 
     font-family: font2;
+    src: url(./font/Caveat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: font3;
     src: url(./font/MellonerRegular.ttf);
 }
 
@@ -22,9 +27,11 @@
     box-sizing: border-box;
 }
 
+/* Barra de navegacion */
+
 .bar_container {
     background: var(--color5);
-    height: 16.5vh;
+    height: 12vh;
     padding: 0 30px 0 30px;
     display: flex;
     justify-content: space-between;    
@@ -32,6 +39,7 @@
     top: 0;
     width: 100%;
     box-shadow: 0 2px 4px var(--color-shadow);
+    z-index: 10000;
 }
 
 .logo img {
@@ -49,48 +57,152 @@
 .navigation a {
     text-decoration: none;
     color: var(--color1);
-    font-family: font2;
-    font-size: 50px;
+    font-family: "Caveat";
+    font-size: 40px;
+    font-weight: 50;
 }
 
-.slide {
-    display: flex;
-    height: 83.5vh;
+.titulo {
+    font-family: font3;
+    color: var(--color3);
+    font-weight: 200;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px var(--color-shadow);;
 }
 
-.slide img {
-    /* width: 100%;
-    height: 100%; */
-    object-fit: contain;
-    overflow: hidden;
+.titulo span{
+    font-family: font1;
+    color: var(--color1);
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
 }
 
-.quienesSomos-contenedor {
-min-height: 83.5vh;
-display: inline-flex;
-background: linear-gradient(to bottom,var(--color2),var(--color4));
+/* Carrusel de Imagenes */
+.imagenes {
+    
+    width: 100vw;
+    align-content: center;
 }
 
-.quienesSomos-parrafo {
-    width: 75%;
+.carrousel {
+    width: 70vw;
+    height: 65vh;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--color2);
+    box-shadow: 2px 2px 4px var(--color-shadow);
+    border-radius: 15px;
 }
 
-.quienesSomos-img {
-    width: 75%;
-}
-
-.quienesSomos-img img {
+.carrousel-contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     width: 100%;
-    height: 83.5vh;
-    object-fit: contain;
+    height: 100%;
+    padding: 1.2em 0 1.5em 0;
+    position: relative;
+}
+
+.carrousel-contenedor img {
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px var(--color-shadow);
+}
+
+.btn {
+    position: absolute;
+    padding: .3em .5em;
+    border-radius: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+    margin-bottom: 0.3em;
+}
+
+.boton {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: var(--color1);
+    box-shadow: 2px 2px 4px var(--color-shadow);
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: #089344;
+}
+
+/* Seccion Quienes Somos */
+
+.quienesSomos {
+    width: 100%;
+    height: 88vh;
+    background: var(--color5);
+    align-content: center;
 }
 
 .parrafo {
-    padding: 30px;
-    font-family: font1;
+    font-family: "Caveat", cursive;
     font-size: 30px;
-    color: white;
+    margin-bottom: 30px;
+    color: var(--color3);
     text-align: center;
-    line-height: 50px;
+    line-height: 35px;
 }
+
+.quienesSomos-contenedor{
+    width: 80%;
+    background: var(--color2); 
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px var(--color-shadow);
+
+}
+.quienesSomos-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 25px 0;
+    margin: 0 20px;
+    justify-content: center;
+
+}
+.quienesSomos-cards .card {
+    background: var(--color5);
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 4px var(--color-shadow);
+
+}
+
+.card img {
+    width: 80%;
+    border-radius: 50%;
+    border: 2px solid var(--color1);
+}
+
+.card h2 {
+    font-family: "caveat";
+    font-size: 1.7rem;
+    color: var(--color1);
+    margin-top: 15px;
+}
+
+.card p {
+    font-family: "Caveat";
+    color: var(--color3);
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+

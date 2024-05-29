@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Del Bien - ¡Mucho más qué fruta!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link rel="icon" href="./styles/png/favicon1.png" type="image/png">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
+
+        <!-- barra de navegacion -->
+
         <div class="bar_container">
             <div class="logo">
                 <img src="./styles/png/logo1.png" alt="">
@@ -17,35 +22,68 @@
                 <a href="">Inicio</a>
                 <a href="#about">Quiénes Somos</a>
                 <a href="#products">Catálogo</a>
-                <a href="#contacs">Contactanos</a>            
+                <a href="#contacs">Contactos</a>            
             </nav>
         </div>
 
-        <div class="slide">
-            <img src="./styles/fotos/slide1.jpg" alt="">
-            <img src="./styles/fotos/slide2.jpg" alt="">
-            <img src="./styles/fotos/slide4.jpg" alt="">
-            <img src="./styles/fotos/slide3.jpg" alt="">
+        <h1 class="titulo"><span>SNACKS</span> Del Bien</h1>
+
+        <!-- Carrousel de imagenes -->
+        <div class="imagenes">
+            <div class="carrousel">
+                <div class="carrousel-contenedor">
+
+                </div>
+    
+                <div class="btn">
+                    <div class="boton atras"></div>
+                    <div class="boton adelante"></div>
+                </div>
+                
+            </div>
         </div>
     </header> 
-
+    
     <main>
+        <!-- Seccion Quienes Somos -->
+        
         <section class="quienesSomos" id="about">
+            
+            <p class="parrafo">Somos un grupo de eprendedores entusiastas interesados 
+                en ofrecer un producto de alta calidad.
+                En Del Bien producimos frutas deshidratas a baja temperatura para 
+                lograr que la fruta no pierda ninguna de sus propiedades.
+                De esta manera logramos no adicionar conservantes y 
+                entregarte <strong>¡solamente fruta!</strong>
+            </p>
+                            
             <div class="quienesSomos-contenedor">
-                <div class="quienesSomos-parrafo">
-                    <p class="parrafo">Somos un grupo de eprendedores entusiastas interesados 
-                        en ofrecer un producto de alta calidad.
-                        En Del Bien producimos frutas deshidratas a baja temperatura para 
-                        lograr que la fruta no pierda ninguna de sus propiedades.
-                        De esta manera logramos no adicionar conservantes y 
-                        entregarte <strong>¡solamente fruta!</strong>
-                    </p>
-                </div>
-                <div class="quienesSomos-img">
-                    <img src="./styles/fotos/foto2.jpg" alt="">
+                <div class="quienesSomos-cards">
+                    <div class="card">
+                        <img src="./styles/perfil/Fede.jpeg" alt="foto">
+                        <h2>Federico Salerno</h2>
+                        <p>Empleado</p>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="foto">
+                        <h2>Nombre y Apellido</h2>
+                        <p>Puesto</p>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="foto">
+                        <h2>Nombre y Apellido</h2>
+                        <p>Puesto</p>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="foto">
+                        <h2>Nombre y Apellido</h2>
+                        <p>Puesto</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Seccion Catalogo -->
+
         <section class="catalogo" id="products">
 
         </section>
@@ -54,5 +92,6 @@
         </section>
         
     </main>   
+    <script src="script.js"></script>
 </body>
 </html>
