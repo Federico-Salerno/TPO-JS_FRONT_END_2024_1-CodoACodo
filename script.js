@@ -1,4 +1,6 @@
 
+//preguntas frecuentes
+
 let pregunta = document.querySelectorAll('.pregunta-frecuente');
 let botonDer = document.querySelectorAll('.simb-der');
 let respuesta = document.querySelectorAll('.respuesta-frecuente');
@@ -27,6 +29,9 @@ for (let i = 0; i < botonDer.length; i = i + 1) {
 }
 
 console.log(parrafo)
+
+//carrousel
+
 let carrousel = document.querySelector('.carrousel-contenedor');
 
 let imagenes = ["./styles/fotos/slide1.jpg", 
@@ -76,3 +81,21 @@ botonAdelante.addEventListener('click', next);
 
 let botonAtras = document.querySelector('.atras')
 botonAtras.addEventListener('click', prev);
+
+
+//js del catalogo con Filtro
+function filterProducts() {
+    const filter = document.getElementById('filter').value;
+    const products = document.getElementsByClassName('product');
+
+    for (let i = 0; i < products.length; i++) {
+        const product = products[i];
+        const type = product.getAttribute('data-type');
+
+        if (filter === 'all' || filter === type) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    }
+} 

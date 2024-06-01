@@ -37,13 +37,11 @@
         <!-- Carrousel de imagenes -->
         <div class="imagenes">
             <div class="carrousel">
-                <div class="carrousel-contenedor">
-
-                </div>
+                <div class="carrousel-contenedor"></div>
     
                 <div class="btn">
-                    <div class="boton atras"></div>
-                    <div class="boton adelante"></div>
+                    <button class="boton atras"></button>
+                    <button class="boton adelante"></button>
                 </div>
                 
             </div>
@@ -64,20 +62,10 @@
             </p>
                             
             <div class="quienesSomos-contenedor">
-                <div class="quienesSomos-parrafo">
-                    <p class="parrafo">Somos un grupo de eprendedores entusiastas interesados
-                        en ofrecer un producto de alta calidad.
-                        En Del Bien producimos frutas deshidratas a baja temperatura para
-                        lograr que la fruta no pierda ninguna de sus propiedades.
-                        De esta manera logramos no adicionar conservantes y
-                        entregarte <strong>¡solamente fruta!</strong>
-                    </p>
-                </div>
-                <div class="quienesSomos-img">
-                    <img src="./styles/fotos/foto2.jpg" alt="">
+
                 <div class="quienesSomos-cards">
                     <div class="card">
-                        <img src="./styles/perfil/Fede.jpeg" alt="foto">
+                        <img src="./styles/perfil/Fede.jpeg" alt="foto_fede">
                         <h2>Federico Salerno</h2>
                         <p>Empleado</p>
                     </div>
@@ -87,14 +75,9 @@
                         <p>Logistica</p>
                     </div>
                     <div class="card">
-                        <img src="" alt="foto">
-                        <h2>Nombre y Apellido</h2>
-                        <p>Puesto</p>
-                    </div>
-                    <div class="card">
-                        <img src="" alt="foto">
-                        <h2>Nombre y Apellido</h2>
-                        <p>Puesto</p>
+                        <img src="./styles/perfil/Foto_Perfil.jpg" alt="foto_ezequiel">
+                        <h2>Ezequiel Vallejos</h2>
+                        <p>Atención al cliente</p>
                     </div>
                 </div>
             </div>
@@ -103,9 +86,65 @@
 
         <section class="catalogo" id="products">
 
+            <section class="catalog">
+                <h2>CATALOGO</h2>
+                <div class="filter">
+                    <label for="filter">Filtrar por tipo:</label>
+                    <select id="filter" onchange="filterProducts()">
+                        <option value="all">Todos</option>
+                        <option value="fresas">Fresas</option>
+                        <option value="higos">Higos</option>
+                        <option value="banana">Bananas</option>
+                        <option value="pomelo">Pomelo</option>
+                    </select>
+                </div>
+                <div class="products" id="product-list">
+                    <div class="product" data-type="fresas">
+                        <img src="./styles/fotos/fresas.jpg" alt="fresas">
+                        <h2>Fresas</h2>
+                        <p>Precio: $2500</p>
+                    </div>
+                    <div class="product" data-type="fresas">
+                        <img src="./styles/fotos/fresas.jpg" alt="fresas">
+                        <h2>Fresas</h2>
+                        <p>Precio: $2200</p>
+                    </div>
+                    <div class="product" data-type="higos">
+                        <img src="./styles/fotos/higos.jpg" alt="higos">
+                        <h2>higos</h2>
+                        <p>Precio: $2800</p>
+                    </div>
+                    <div class="product" data-type="higos">
+                        <img src="./styles/fotos/higos.jpg" alt="higos">
+                        <h2>higos</h2>
+                        <p>Precio: $3200</p>
+                    </div>
+                    <div class="product" data-type="banana">
+                        <img src="./styles/fotos/banana-chips.jpg" alt="Bananas">
+                        <h2>Banana</h2>
+                        <p>Precio: $2700</p>
+                    </div>
+                    <div class="product" data-type="banana">
+                        <img src="./styles/fotos/banana-chips.jpg" alt="Bananas">
+                        <h2>Banana</h2>
+                        <p>Precio: $2820</p>
+                    </div>
+                    <div class="product" data-type="pomelo">
+                        <img src="./styles/fotos/limon.jpg" alt="Pomelo">
+                        <h2>Pomelo</h2>
+                        <p>Precio: $3850</p>
+                    </div>
+                    <div class="product" data-type="pomelo">
+                        <img src="./styles/fotos/mandarina.jpg" alt="Pomelo">
+                        <h2>Pomelo</h2>
+                        <p>Precio: $2450</p>
+                    </div>
+                </div>
+            </section>
+
         </section>
         <!-- CATALOGO -->
-        <section id="products">
+        <!-- <section id="products">
             <div class="img-catalogo">
                 <h3>catalogo</h3>
                 <img src="./styles/png/Icono blanco y negro sin fondo.png" width="150px" alt="">
@@ -209,7 +248,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <!-- PREGUNTAS -->
         <section class="container-preguntas" id="container-preguntas">
@@ -218,53 +257,45 @@
             <div class="preguntas-frecuentes">
                 <div class="pregunta-frecuente">
                     <i class="bi bi-question simb-izq"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt enim dicta vitae voluptate?
+                    <p>Las frutas siguen teniendo las mismas propiedades?
                     </p>
                     <div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
                 </div>
                 <div class="respuesta-frecuente">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex libero eum doloribus aut eius
-                        molestias commodi, repellat similique error impedit adipisci quasi corrupti harum doloremque
-                        placeat voluptatibus autem sint cum!</p>
+                    <p>Si! nuestra técnica de horneado a bajas temperaturas asegura que las propiedades del alimento no se pierda.</p>
                 </div>
             </div>
             <div class="preguntas-frecuentes">
                 <div class="pregunta-frecuente">
                     <i class="bi bi-question simb-izq"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt enim dicta vitae voluptate?
+                    <p>Es un alimento apto para celíacos?
                     </p>
                     <div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
                 </div>
                 <div class="respuesta-frecuente">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex libero eum doloribus aut eius
-                        molestias commodi, repellat similique error impedit adipisci quasi corrupti harum doloremque
-                        placeat voluptatibus autem sint cum!</p>
+                    <p>Claro! No posee ningun tipo de agregados y nos aseguramos de que haya contaminación cruzada.</p>
                 </div>
             </div>
             <div class="preguntas-frecuentes">
                 <div class="pregunta-frecuente">
                     <i class="bi bi-question simb-izq"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt enim dicta vitae voluptate?
+                    <p>Tiene fecha de vencimiento?
                     </p>
                     <div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
                 </div>
                 <div class="respuesta-frecuente">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex libero eum doloribus aut eius
-                        molestias commodi, repellat similique error impedit adipisci quasi corrupti harum doloremque
-                        placeat voluptatibus autem sint cum!</p>
+                    <p>Como cualquier producto alimenticio no dura para siempre pero si podemos asegurar que, por su proceso de secado, el alimento es seguro y se puede conservar por mas de 6 meses.</p>
                 </div>
             </div>
             <div class="preguntas-frecuentes">
                 <div class="pregunta-frecuente">
                     <i class="bi bi-question simb-izq"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt enim dicta vitae voluptate?
+                    <p>Es seguro para niños?
                     </p>
                     <div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
                 </div>
                 <div class="respuesta-frecuente">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex libero eum doloribus aut eius
-                        molestias commodi, repellat similique error impedit adipisci quasi corrupti harum doloremque
-                        placeat voluptatibus autem sint cum!</p>
+                    <p>Es totalmente seguro y se recomienda reemplazarlo por cualquier otro snack ultraprocesado. </p>
                 </div>
             </div>
         </section>
@@ -272,9 +303,11 @@
 
         <!-- CONTACTOS -->
         <section class="contactanos" id="contacs">
+
             <div class="titulo-formulario">
-                <h3>formulario</h3>
+                <h3><COlg>CONTACTOS</COlg></h3>
             </div>
+
             <form action="">
                 <label for="nombre">Escribe tu nombre: <input id="nombre" name="nombre" type="text"
                         placeholder="nombre_apellido"></label>
